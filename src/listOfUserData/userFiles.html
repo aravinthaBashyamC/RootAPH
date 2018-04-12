@@ -1,0 +1,22 @@
+<!--<div  style="display: table; width:100%;">
+
+<div style="display: table-row;height:25px; width:150px;  border-bottom-color: 1px solid papayawhip;" *ngFor="let dataList of _dataServices.dataForOpp.data;let i=index">
+<div (click)="dataClick(dataList,i)" style="display: table-cell; background-color: lightblue; border-bottom: 2px solid gray;">
+    Title: {{dataList.title}}
+
+</div>
+    
+</div>
+
+</div>
+-->
+
+<mat-list>
+  <mat-list-item style="background-color: lightblue;"*ngFor="let dataList of _dataServices.dataForOpp.data;let i=index" (click)="dataClick(dataList,i)">
+    <h3 matLine style="color: gray;"> {{dataList.title}} </h3>
+    <p style="color: deepskyblue;" matLine>
+      <span> {{dataList.title}} </span>
+      <span class="demo-2"> -- {{dataList.title}} </span>
+    </p>
+  </mat-list-item>
+</mat-list>
